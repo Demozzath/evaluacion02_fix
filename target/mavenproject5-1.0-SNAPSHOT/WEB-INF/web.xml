@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="3.0" xmlns="http://java.sun.com/xml/ns/javaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd">
+    <servlet>
+        <servlet-name>competidoresController</servlet-name>
+        <servlet-class>controller.competidoresController</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>competidoresController</servlet-name>
+        <url-pattern>/competidoresController</url-pattern>
+    </servlet-mapping>
+    <session-config>
+        <session-timeout>
+            30
+        </session-timeout>
+    </session-config>
+    <data-source>
+        <description>DataSource Competencia</description> 
+        <name>java:app/competencia_2</name> 
+        <class-name>org.postgresql.ds.PGSimpleDataSource</class-name> 
+        <server-name>localhost</server-name> 
+        <port-number>5432</port-number> 
+        <database-name>competencia_2</database-name> 
+        <user>postgres</user>
+        <password>postgre12345</password>
+    </data-source>
+</web-app>
